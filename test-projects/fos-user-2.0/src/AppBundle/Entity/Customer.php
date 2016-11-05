@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use FOS\UserBundle\Model\User as BaseUser;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Customer
@@ -23,6 +24,14 @@ class Customer extends BaseUser
     protected $id;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="birth_date", type="date")
+     * @Assert\LessThan("-13 years", groups={"Registration", "Profile"}, message="You must be 13 years old or older!")
+     */
+    protected $birthDate;
+
+    /**
      * Get id
      *
      * @return int
@@ -30,6 +39,22 @@ class Customer extends BaseUser
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @return \DateTime
+     */
+    public function getBirthDate()
+    {
+        return $this->birthDate;
+    }
+
+    /**
+     * @param \DateTime $birthDate
+     */
+    public function setBirthDate($birthDate)
+    {
+        $this->birthDate = $birthDate;
     }
 }
 

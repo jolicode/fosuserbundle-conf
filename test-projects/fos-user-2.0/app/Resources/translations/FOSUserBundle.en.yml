@@ -1,0 +1,12 @@
+registration:
+    flash:
+        user_created: 'Your account has been created successfully, congratulation!'
+    email:
+        subject: 'Welcome %username%!'
+        message: |
+            Hello %username%!
+
+            To finish activating your account - please visit %confirmationUrl%
+
+            Regards,
+            the Team.

@@ -21,8 +21,10 @@ open http://127.0.0.1:8000/register
 ```
 
 
-- pourquoi le service est nommé fos_user.user_provider.username ?
+- pourquoi le service est nommé fos_user.user_provider.username ? DONE
+
 - dès la config on est limité à une seule entité ?
+
 - charset utf8 HEU QUOI ? Merci Doctrine/SYMFONY
 
         charset:  utf8mb4
@@ -39,4 +41,4 @@ LA BASE! Voir issue #5526 sur le sujet ouverte il y a plus d'1 an
 - '(DC2Type:array)' par défaut, ça se change ?
 - username 🔩 pas possible, trop petit! Pour un password ok, mais là?!
 
-TODO LOGMATIC SUR SLACK SECRET SANTA ?
+
