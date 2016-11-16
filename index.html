@@ -50,19 +50,19 @@
         <section>
             <h2>Our journey</h2>
 
-            <ul>
+            <ol>
                 <li>What is FOSUserBundle
                 <li>Why it's not the right fit for a professional project
                 <li>Implementing your own User Manager
                 <li>Choosing a Bundle, the Right Way ©
-            </ul>
+            </ol>
         </section>
 
         <section data-state="jolistate">
             <h2>Hi there! 👋</h2>
 
             <ul style="float: right">
-                <li><a href="https://twitter.com/damienalexandre">@damienalexandre</a></li>
+                <li><a href="https://twitter.com/damienalexandre">@damienalexandre</a> 🇫🇷</li>
                 <li>Symfony consultant since 2008
                 <li>Contributor, writer, speaker
                 <li>Elasticsearch 🔎 and Unicode enthusiast
@@ -80,7 +80,7 @@
         <section data-state="jolistate">
             <h2>I'm a consultant</h2>
 
-            <p>I do audits, developments, trainings in Paris 🇫🇷</p>
+            <p>I do audits, developments, trainings in Paris</p>
             <p>
                 <a href="http://jolicode.com">
                     <img src="./lib/font/logo-fond-noir.svg" alt="JoliCode"/>
@@ -94,12 +94,12 @@
             <h2>It all started with a new project</h2>
 
             <ul>
-                <li>Install Symfony and FOSUserBundle </li>
+                <li>Install Symfony and FOSUserBundle</li>
                 <li>Client wants some modifications</li>
                 <li>Tweak the bundle</li>
                 <li>Hack the bundle</li>
                 <li>Rewrite part of the bundle</li>
-                <li>What the hell did I do 😥</li>
+                <li>"What the hell did I do" 😥</li>
             </ul>
         </section>
 
@@ -107,23 +107,35 @@
             <h2>One year ago</h2>
 
             <p>I had to let it go:</p>
-            <p><a href="https://jolicode.com/blog/do-not-use-fosuserbundle">https://jolicode.com/blog/do-not-use-fosuserbundle</a></p>
+
+            <a href="https://jolicode.com/blog/do-not-use-fosuserbundle"><img
+                    src="images/article.png" alt="Article FOSUserBundle" style="width: 70%;"></a>
         </section>
 
         <section>
-            <h2 class="no-caps">What is FOSUserBundle</h2>
+            <h2 class="no-caps">Was ist FOSUserBundle?</h2>
         </section>
 
         <section>
             <h2 class="no-caps">A bit of history</h2>
 
             <ul>
-                <li>Original idea and <a
-                        href="https://github.com/KnpLabs/KnpUserBundle/commit/3b1140f416139dd813efc9c6a02516df245f380c">first implementation</a> by KNPLabs in May, 2010</li>
-                <li>Was called <strong class="emphasis">DoctrineUserBundle</strong> in reference to our good old <strong class="emphasis">sfDoctrineGuardPlugin</strong> 👴</li>
-                <li>December 2010, it was <a
-                        href="https://github.com/KnpLabs/KnpUserBundle/commit/8fbf0e9157f5f1d3be8c4ef0e380011015388ebe">moved</a> to <strong class="emphasis">FriendOfSymfony</strong></li>
-                <li>FOS was born!</li>
+                <li>May, 2010: Original idea and <a
+                        href="https://github.com/KnpLabs/KnpUserBundle/commit/3b1140f416139dd813efc9c6a02516df245f380c">first implementation</a> by KNPLabs 🎉
+
+                    <ul>
+                        <li>Was called <strong class="emphasis">DoctrineUserBundle</strong> in reference to our good old <strong class="emphasis">sfDoctrineGuardPlugin</strong> 👴</li>
+                    </ul>
+                </li>
+
+                <li>December 2010: it was <a
+                        href="https://github.com/KnpLabs/KnpUserBundle/commit/8fbf0e9157f5f1d3be8c4ef0e380011015388ebe">moved</a> to <strong class="emphasis">FriendOfSymfony</strong>
+
+                    <ul>
+                        <li>FOS was born!</li>
+                    </ul>
+                </li>
+
             </ul>
         </section>
 
@@ -142,8 +154,8 @@
         <section>
             <h2 class="no-caps">Symfony 2 release</h2>
 
-            <p>Version 1.0 was tagged 1 month after Symfony 2.0 release, back in July 2011.</p>
-            <p>Yes we had a deps file 🎉</p>
+            <p>July 2011: Version 1.0 was tagged,<br>1 month after Symfony 2.0 release.</p>
+            <p>Yes we had a deps file 😬</p>
 
             <pre><code class="hljs" data-trim>[FOSUserBundle]
 git=git://github.com/FriendsOfSymfony/FOSUserBundle.git
@@ -181,7 +193,7 @@ target=bundles/FOS/UserBundle</code></pre>
         </section>
 
         <section>
-            <h2 class="no-caps">What is already in Symfony</h2>
+            <h2 class="no-caps">What is not in FOSUser</h2>
             <ul>
                 <li>Authentication (Form login, basic, ldap...)
                 <li>Authorisation (Access controls...)
@@ -207,12 +219,12 @@ target=bundles/FOS/UserBundle</code></pre>
                         <li>24k monthly downloads</li>
                     </ul>
                 </li>
-                <li class="fragment"><strong class="emphasis">dev-master</strong> has 135k monthly downloads 😱</li>
+                <li class="fragment"><h3 class="no-caps"><strong class="emphasis">dev-master</strong> has 135k monthly downloads 😱</h3></li>
             </ul>
         </section>
 
         <section>
-            <h1 class="no-caps">Why you <br>should not<br> use it</h1>
+            <h1 class="no-caps">Why you <br>should not<br> use it 🙊</h1>
         </section>
 
         <section>
@@ -222,7 +234,7 @@ target=bundles/FOS/UserBundle</code></pre>
                 <li>This will cause some pain
                 <li>Some choices are done for the greater good
                 <li>Not everything will work for you
-                <li>You will spend time bending the implementation to your needs
+                <li>You will spend a lot of time bending the implementation to your needs
             </ul>
         </section>
 
@@ -230,10 +242,11 @@ target=bundles/FOS/UserBundle</code></pre>
             <h2 class="no-caps">Pain #1: Username and email as identity</h2>
 
             <ul>
-                <li>Login form uses username by default
-                <li>Both email and username are unique, so email is also valid as identity
-                <li>Most professional websites use email as login (e-commerce and other non social services)
-                <li>No need for an username field on most of my projects
+                <li>Login form uses <strong class="emphasis">username by default</strong> 👤
+                <li>Both <strong class="emphasis">email</strong> and <strong class="emphasis">username</strong> are unique,
+                so email is also valid as identity ☑
+                <li>Most professional websites use email as login
+                <li>You <strong class="emphasis">can't</strong> really switch to emails only 😥
             </ul>
         </section>
 
@@ -245,7 +258,7 @@ target=bundles/FOS/UserBundle</code></pre>
             <ul>
                 <li><code>fos_user.user_provider.username</code></li>
                 <li><code>fos_user.user_provider.username_email</code></li>
-                <li>PR in progress for an email only provider</li>
+                <li><a href="https://github.com/FriendsOfSymfony/FOSUserBundle/pull/2122">PR in progress</a> for an email only provider</li>
             </ul>
         </section>
         <section>
@@ -262,7 +275,7 @@ target=bundles/FOS/UserBundle</code></pre>
                         href="https://github.com/symfony/symfony/issues/10316">change in the future</a>...</li>
                 <li>It's ok to have <code>getUsername</code> <a
                         href="http://symfony.com/doc/current/doctrine/registration_form.html#having-a-registration-form-with-only-email-no-username">return an email</a></li>
-                <li>Removing the username field is not possible, you have to hack!</li>
+                <li>But removing the username field is not possible, you have to hack!</li>
             </ul>
         </section>
 
@@ -270,7 +283,7 @@ target=bundles/FOS/UserBundle</code></pre>
             <h2 class="no-caps">Pain #1: Bye Username</h2>
             <ul>
                 <li>Hack the entity setter:
-                    <pre><code class="hljs" data-trim>public function setEmail($email) {
+                    <pre><code class="hljs php" data-trim>public function setEmail($email) {
     $email = is_null($email) ? '' : $email;
     parent::setEmail($email);
     $this->setUsername($email);
@@ -280,7 +293,7 @@ target=bundles/FOS/UserBundle</code></pre>
                 <li>
                     Remove the field from the FormType:
 
-                    <pre><code class="hljs" data-trim>public function buildForm(FormBuilder $builder, array $options) {
+                    <pre><code class="hljs php" data-trim>public function buildForm(FormBuilder $builder, array $options) {
     parent::buildForm($builder, $options);
     $builder->remove('username');
 }</code></pre>
@@ -290,17 +303,17 @@ target=bundles/FOS/UserBundle</code></pre>
         <section>
             <h2 class="no-caps">Pain #1: Bye Username</h2>
             <ul>
-                <li>Completely rewrite the validation constraint and implement new groups</li>
-                <li><code>fos_user.user_provider.username_email</code> as user provider</li>
+                <li>Completely rewrite the validation constraints and implement new validation groups</li>
+                <li>Switch the user provider to email OR username</li>
                 <li><a href="http://stackoverflow.com/a/21064627/665923">Full instructions here</a></li>
-                <li>The username field is still in the database</li>
+                <li>The username field is <strong class="emphasis">still in the database</strong> 😡</li>
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Pain #1: username_email</h2>
+            <h2 class="no-caps">Pain #1: username_email provider is a hack ⚠</h2>
 
-            <pre><code style="font-size: 1.2em;" class="hljs" data-trim>public function findUserByUsernameOrEmail($usernameOrEmail)
+            <pre><code style="font-size: 1.2em;" class="hljs php" data-trim>public function findUserByUsernameOrEmail($usernameOrEmail)
 {
     if (preg_match('/^.+\@\S+\.\S+$/', $usernameOrEmail)) {
         return $this->findUserByEmail($usernameOrEmail);
@@ -309,22 +322,18 @@ target=bundles/FOS/UserBundle</code></pre>
     return $this->findUserByUsername($usernameOrEmail);
 }</code></pre>
 
-            <p>Creative usernames will never be found:</p>
-            <ul>
-                <li>𝜋 @3.14</li>
-                <li>[@lpha.org]...</li>
-            </ul>
+            <p>Creative usernames will never be found:<br /> <strong class="emphasis">[@lpha.org]</strong>, <strong class="emphasis">𝜋 @3.14</strong>...</p>
         </section>
 
 
         <section>
             <h2 class="no-caps">Pain #2: Database</h2>
 
-            <p>The default table is full of fields we may never use <br>and 🚫 cannot be removed 🚫</p>
+            <p>The default table is full of fields you may never use <br>and 🚫 cannot be removed 🚫</p>
 
             <ul>
                 <li><code>username</code> and <code>username_canonical</code></li>
-                <li><code>email_canonical</code>, collations anyone?</li>
+                <li><code>email_canonical</code> ⚠</li>
                 <li><code>salt</code>, not needed since bcrypt (UserInterface)</li>
                 <li><code>last_login</code>, why should I want that?</li>
                 <li><code>roles</code> is <code>(DC2Type:array)</code>, no interoperability</li>
@@ -334,7 +343,7 @@ target=bundles/FOS/UserBundle</code></pre>
             <h2 class="no-caps">Pain #2: Database</h2>
 
             <ul>
-                <li>AdvancedUserInterface is implemented 😒
+                <li><strong class="emphasis">AdvancedUserInterface</strong> is implemented 🙌
                     <ul>
                         <li><code>locked</code></li>
                         <li><code>expired</code></li>
@@ -343,7 +352,8 @@ target=bundles/FOS/UserBundle</code></pre>
                         <li><code>credentials_expire_at</code></li>
                     </ul>
                 </li>
-                <li>Doctrine's <strong>AttributeOverrides</strong> may allow to edit some fields options, no removing or type change.</li>
+                <li>Doctrine's <strong class="emphasis">AttributeOverrides</strong> may allow to edit some fields options,
+                    but no removing or type switching.</li>
             </ul>
         </section>
 
@@ -351,7 +361,7 @@ target=bundles/FOS/UserBundle</code></pre>
         <section>
             <h2 class="no-caps">Pain #3: Wording</h2>
 
-            <p>Obviously default template <strong>must</strong> be customized 🎨</p>
+            <p>Obviously default template <strong class="emphasis">must</strong> be customized 🎨</p>
 
             <img src="images/fosuser-default-register.png" alt="Register FOSUserBundle">
         </section>
@@ -363,14 +373,14 @@ target=bundles/FOS/UserBundle</code></pre>
                 <li>Setting your own layout:<br>
                     <code>app/Resources/FOSUserBundle/views/layout.html.twig</code>
                 </li>
-                <li>Special block fos_user_content:
-                    <pre><code class="hljs" data-trim>{% extends "::base.html.twig" %}
+                <li>Special block <strong class="emphasis">fos_user_content</strong>:
+                    <pre><code class="hljs twig" data-trim>{% extends "::base.html.twig" %}
 {% block body %}
 {% block fos_user_content %}{% endblock fos_user_content %}
 {{ parent() }}
 {% endblock body %}</code></pre>
                 </li>
-                <li>You <strong>HAVE</strong> to display flash messages</li>
+                <li>You <strong class="emphasis">HAVE</strong> to display flash messages</li>
             </ul>
         </section>
 
@@ -385,35 +395,38 @@ target=bundles/FOS/UserBundle</code></pre>
 
             <blockquote>The user has been created successfully</blockquote>
 
-            <p style="font-size: 2em;">😐</p>
-        </section>
-
-        <section>
-            <h2 class="no-caps">Pain #3: Wording</h2>
-
-            <p>Validation messages, form labels, emails contents are provided (and translated in a lot of languages thanks to awesome contributors).</p>
-            <p>But generic messages are good for bots, not your customers.</p>
-        </section>
-
-
-        <section>
-            <h2 class="no-caps">Pain #3: Wording</h2>
-
-            <p><code>app/Resources/translations/FOSUserBundle.en.yml</code></p>
-            <pre><code class="hljs" data-trim>registration:
-    flash:
-        user_created: >
-            Your account has been created successfully,
-            congratulation!'</code></pre>
+            <p style="font-size: 2em;">😐 🤔</p>
         </section>
 
         <section>
             <h2 class="no-caps">Pain #3: Wording</h2>
 
             <ul>
-                <li>Emails are Twig files with translations in YML files, and only the txt part is provided</li>
-                <li>The Mailer use Twig blocs to get the subject, text and html body parts</li>
+                <li><strong class="emphasis">Good:</strong> All the texts are provided and translated in 40 languages 🌍 thanks to awesome contributors 👍</li>
+                <li><strong class="emphasis">Bad:</strong> Messages are very generics, so you still have some translation work to do ✍</li>
+
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Pain #3: Wording</h2>
+
+            <p><code>app/Resources/translations/FOSUserBundle.en.yml</code></p>
+            <pre><code class="hljs yaml" data-trim>registration:
+    flash:
+        user_created: >
+            Your account has been created successfully,
+            congratulation!</code></pre>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Pain #3: Wording</h2>
+
+            <ul>
+                <li>Emails are Twig files with translations, <br>and only the <strong class="emphasis">txt part</strong> is provided</li>
+                <li>The Mailer use Twig blocks to get the subject, text and html body parts</li>
                 <li>There is a MailerInterface, because the default one is opinionated</li>
+                <li class="fragment">I often build a custom FOSUser Mailer as bridge to my real application Mailer 👍</li>
             </ul>
         </section>
 
@@ -423,22 +436,22 @@ target=bundles/FOS/UserBundle</code></pre>
 
             <ul>
                 <li>Adding a field to the user profile is easy, it's your entity:
-                    <pre><code class="hljs" data-trim>/**
+                    <pre><code class="hljs php" data-trim>/**
  * @var \DateTime
  * @ORM\Column(name="birth_date", type="date")
  * @Assert\LessThan("-13 years", groups={"Registration", "Profile"})
  */
 protected $birthDate;</code></pre>
                 </li>
+                <li><strong class="emphasis">DO NOT</strong> forget the validation groups if you need validation</li>
                 <li>What about form types then?</li>
-                <li><strong>DO NOT</strong> forget the validation groups if you need validation</li>
             </ul>
         </section>
 
         <section>
             <h2 class="no-caps">Pain #4: Extendability</h2>
 
-            <pre><code class="hljs" data-trim>class RegistrationType extends AbstractType
+            <pre><code class="hljs php" data-trim>class RegistrationType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -456,18 +469,18 @@ protected $birthDate;</code></pre>
         <section>
             <h2 class="no-caps">Pain #4: Extendability</h2>
 
-            <pre><code class="hljs" data-trim>fos_user:
+            <pre><code class="hljs yaml" data-trim>fos_user:
     ...
     registration:
         form:
-            type: AppBundle\Form\RegistrationType
+            type: "AppBundle\Form\RegistrationType"
 </code></pre>
 
-            <p>To do for both the registration and profile types.</p>
+            <p>To do for both the registration and profile types 😓</p>
         </section>
 
         <section>
-            <h2 class="no-caps">File madness</h2>
+            <h2 class="no-caps">File madness 🚨</h2>
 
             <pre style="font-size: 0.4em; float:left; width: 55%; margin-right: 10px;"><code class="hljs" data-trim>app/Resources
 ├── FOSUserBundle
@@ -501,27 +514,29 @@ protected $birthDate;</code></pre>
             <h2 class="no-caps">So much files and overwriting</h2>
 
             <p>
-                Very soon in your projects, you will note that you are building a lot on top of the Bundle, increasing your dependency on it.
+                Very soon in your projects, you will note that<br> <strong class="emphasis">you are building a lot on top of the Bundle</strong>,
+                increasing your dependency on it.
             </p>
 
             <p>That's called Technical Debt.</p>
 
             <p class="fragment">
-                Creating this much files… Why not drop the bundle and write them anyway?
+                Why not drop the bundle and write them anyway? 🤔
             </p>
         </section>
 
 
         <section>
-            <h2 class="no-caps">Bonus pain</h2>
+            <h2 class="no-caps">🥖 Bonus pain 🥖</h2>
         </section>
 
         <section>
             <h2 class="no-caps">Separated User entities</h2>
 
             <ul>
-                <li>You need a "Customer" entity and an "Admin" one?</li>
-                <li class="fragment">Install PUGXMultiUserBundle (ORM only), a Bundle that extends FOSUserBundle. At your own risks.</li>
+                <li>You need a <strong class="emphasis">Customer</strong> entity and an <strong class="emphasis">Admin</strong> entity?</li>
+                <li class="fragment">Install PUGXMultiUserBundle (ORM only), a Bundle that extends FOSUserBundle!</li>
+                <li class="fragment">🚨 At your own risks 🚨</li>
             </ul>
         </section>
 
@@ -529,12 +544,13 @@ protected $birthDate;</code></pre>
             <h2 class="no-caps">Separated Login Forms</h2>
 
             <ul>
-                <li>Custom login form for admin or user access?
+                <li>Custom login form for backend and customer access?
 
                     <ul class="fragment">
                         <li>custom routes for everything</li>
-                        <li>a new firewall and new access_control entries
-                        <li>a new <code>SecurityController</code> extending the bundle one, with some conditions to know what template to render
+                        <li>a new firewall and new <code>access_control</code> entries
+                        <li>a new <code>SecurityController</code> extending the bundle one,
+                        with some conditions to know what template to render 🙈
                         <li>and of course the new template</li>
                     </ul>
                 </li>
@@ -545,45 +561,51 @@ protected $birthDate;</code></pre>
             <h2 class="no-caps">Why you shouldn't use it</h2>
 
             <ul>
-                <li>Technical dept generator
+                <li>Technical dept generator if you need customisation
                 <li>Hard to adapt, lots of file to write
                 <li>Hardly maintained 😧
-                <li>Makes visible your usage of Symfony + FOSUserBundle, which can be a security concern:<br />
-                    <code>inurl:"/resetting/request" "Username or email address"</code></li>
+                <li>Makes visible your usage of Symfony + FOSUserBundle, which can be a security concern 🕵</li>
+            </ul>
+
+            <blockquote>inurl:"/resetting/request" "Username or email address"</blockquote>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Why we need it!</h2>
+
+            <ul>
+                <li>Symfony Security is hard to learn 🔐
+                <li>It enable a WOW effect for new developers 😃
+                <li>Still a great piece of software if you stay in the lines 😍
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Hardly maintained</h2>
+            <h2 class="no-caps">Why we need it!</h2>
 
             <ul>
-                <li>This is the most used third party bundle
-                <li>It's the entry point of a lot of new users, the user base does not know Symfony very well
+                <li>This is the most used third party bundle 📈
+                <li>It's the entry point of a lot of new users, <br />
+                the user base that does not know Symfony very well 👶
             </ul>
 
-            <p>Maybe we should do better for the sake of Symfony? FOSUserBundle should be helpful, not scary.</p>
-
-            <p><small>At the moment it's a very good introduction on how to extend a Bundle tho.</small></p>
+            <h4 class="no-caps">Maybe we should do better for the sake of Symfony? FOSUserBundle should be helpful, not scary.</h4>
         </section>
 
         <section>
-            <h2 class="no-caps">Hardly maintained</h2>
+            <h2 class="no-caps">Hardly maintained 😰</h2>
 
-            <ul>
-                <li>Issue overflow: everyone ask questions about the Symfony Security here, thinking security is FOSUser concern.
-                    <a href="https://github.com/FriendsOfSymfony/FOSUserBundle/issues/2290">#2290</a> i.e.
-                        <br>
-                    <img style="max-width: 60%" src="images/2290.png" alt="Issue 2290">
-                </li>
-                <li>First issue ever for this user. Probably discovering both Symfony and Github.</li>
-            </ul>
+            <p><strong class="emphasis">Issue overflow</strong>: everyone ask questions about the Symfony Security here,
+                thinking Security is FOSUser concern:</p>
+
+            <a href="https://github.com/FriendsOfSymfony/FOSUserBundle/issues/2290"><img style="max-width: 60%" src="images/2290.png" alt="Issue 2290"></a>
         </section>
 
         <section>
-            <h2 class="no-caps">Hardly maintained</h2>
+            <h2 class="no-caps">Hardly maintained 😰</h2>
 
             <ul>
-                <li>Plenty of other example, just looking at the first page:
+                <li>Plenty of other examples, just looking at the first page:
 
                     <ul>
                         <li><a href="https://github.com/FriendsOfSymfony/FOSUserBundle/issues/2251">#2251</a> is resolved but the user does not close it</li>
@@ -592,24 +614,30 @@ protected $birthDate;</code></pre>
                         <li><a href="https://github.com/FriendsOfSymfony/FOSUserBundle/issues/2251">#2215</a> is question about email going to spam...</li>
                     </ul>
                 </li>
-
-                <li>Slowed down by it's own popularity
-                <li>Also, no strong labels management, no triage like FOSRest or FOSHttpCache</li>
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Hack Day</h2>
+            <h2 class="no-caps">Hardly maintained 😰</h2>
 
             <ul>
-                <li>What are you doing this saturday?
+                <li>Slowed down by it's own popularity 🙉
+                <li>Also, no strong labels management, no triage like FOSRest or FOSHttpCache 🗃</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">📆 Hack Day 📆</h2>
+
+            <ul>
+                <li>What are you doing <strong class="emphasis">this Saturday</strong>?
                 <li>Let's try to help the most used Bundle. Let's try to help newcomers.
                 <li>That's some serious "DX" (Developer eXperience) task!
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Building your own</h2>
+            <h2 class="no-caps">Building your own 💪</h2>
         </section>
 
         <section>
@@ -636,7 +664,7 @@ protected $birthDate;</code></pre>
 
             <ul>
                 <li>Create your User entity, implement UserInterface
-                <li>Configure Security to load from your Entity, part of Symfony
+                <li>Configure Security to load from your Entity, <br >that's part of Symfony
             </ul>
         </section>
 
@@ -651,7 +679,16 @@ protected $birthDate;</code></pre>
                 <li>Write a template
             </ul>
 
+
+        </section>
+
+        <section>
+            <h2 class="no-caps">Building your own</h2>
+
             <p>That's basic Symfony development. Same for password reset, profile edit...</p>
+
+            <p class="fragment">Just some decisions to make based on your needs and environment 👇 👈 👉<br />
+            Like, do you need <strong class="emphasis">canonical fields</strong>?</p>
         </section>
 
         <section>
@@ -659,45 +696,70 @@ protected $birthDate;</code></pre>
 
             <ul>
                 <li>FOSUserBundle adds canonical versions of all the username and email fields
-                <li>Canonicalizer is just: <br><code>mb_convert_case($string, MB_CASE_LOWER);</code>
+                <li><code>mb_convert_case($string, MB_CASE_LOWER);</code>
                 <li>This allow to make sure we can't have two accounts with the same email:<br>
-                <code>foobar@example.org</code>
-                <br><code>FoOBAR@example.org</code>
+
             </ul>
+            <p><code>foobar@example.org</code><br><code>FoOBAR@example.org</code></p>
         </section>
 
         <section>
             <h2 class="no-caps">Canonical fields</h2>
 
             <ul>
-                <li>Do you know what an SQL collation is for?
+                <li>Do you know what an <strong class="emphasis">SQL collation</strong> is for?
                 <li><pre><code class="hljs" data-trim>… COLLATE utf8mb4_unicode_ci ENGINE = InnoDB;</code></pre></li>
-                <li>This tell how to sort the data in your table, to make sure "A" and "a" are before "Z" dans "z"... which may not be the case in binary order.</li>
-                <li>It also tells the SGBD that <code>â</code> = <code>Ä</code> = <code>A</code></li>
+                <li>It tells how to <strong class="emphasis">sort the data</strong> in your table, to make sure "A" and "a" are before "Z" dans "z"... which may not be the case in binary order</li>
             </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">With a proper collation</h2>
+
+            <h1><code>â</code> = <code>Ä</code> = <code>A</code></h1>
+
+            <h2>🤘</h2>
         </section>
 
         <section>
             <h2 class="no-caps">Canonical fields</h2>
 
-            <h3>You do not need them if you have a collation!</h3>
+            <h3 class="no-caps">It works for SELECT:</h3>
 
             <pre><code class="hljs" data-trim>SELECT 'föoBAR@example.org' COLLATE UTF8_GENERAL_CI
     = 'foobar@example.org' COLLATE UTF8_GENERAL_CI;
-=> 1
 
+
+=> 1
+</code></pre>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Canonical fields</h2>
+
+            <h3 class="no-caps">It also works with UNIQUE KEY:</h3>
+
+            <pre><code class="hljs sql" data-trim>
 CREATE TABLE `test` (
   `username` varchar(180) COLLATE utf8mb4_unicode_ci,
   UNIQUE KEY `uniqueindextest` (`username`)
 ) ENGINE=InnoDB DEFAULT
 CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+
 INSERT INTO `test` (username) VALUES
     ('FOOBAR@example.org'), ('foobär@example.org');
+
 
 => Duplicate entry 'foobär@example.org'
 => for key 'uniqueindextest'
 </code></pre>
+        </section>
+
+        <section>
+            <h2 class="no-caps">You do not need Canonical fields</h2>
+
+            <h1>👋</h1>
         </section>
 
         <section>
@@ -706,20 +768,25 @@ INSERT INTO `test` (username) VALUES
         </section>
 
         <section>
-            <h2 class="no-caps">Implementation Bundles</h2>
-            <p>Avoid them as much as you can.</p>
-            <p>Opinionated, harder to extends, locks your code base.</p>
-        </section>
-
-        <section>
             <h2 class="no-caps">Where to look</h2>
 
             <ul>
-                <li>http://symfohub.com/ is dead</li>
-                <li><a href="http://knpbundles.com/">KNPBundles</a> is ok but not up to date</li>
-                <li><a href="https://packagist.org/">Packagist</a> is the best source!</li>
-                <li class="fragment">Add <code>&amp;type=symfony-bundle</code> to filter only the Symfony Bundle!</li>
+                <li>http://symfohub.com/ is dead 😭</li>
+                <li><a href="http://knpbundles.com/">KNPBundles.com</a> is ok but not up to date 😐</li>
+                <li><a href="https://packagist.org/">Packagist.org</a> is the best source! 😍
+
+                    <ul>
+                        <li class="fragment">Add <code>&amp;type=symfony-bundle</code> to filter only the Symfony Bundle!</li>
+                    </ul>
+                </li>
+
             </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Packagist.org</h2>
+
+            <p>TODO https://packagist.org/packages/jolicode/gif-exception-bundle DETAILS</p>
         </section>
 
         <section>
@@ -730,6 +797,8 @@ INSERT INTO `test` (username) VALUES
                 <li>Is it maintained? Is it up to date? Can I contribute?
                 <li>What does it do and how easily can it be changed?
                 <li>What’s the real added value? Sometimes a bundle is just a library exposed as a service
+                <li>Is there any tests? Are they green?
+                <li>What are the dependencies?
             </ul>
         </section>
 
@@ -747,11 +816,28 @@ INSERT INTO `test` (username) VALUES
         </section>
 
         <section>
+            <h2 class="no-caps">Two types of Bundle</h2>
+
+            <p>There is more</p>
+        </section>
+
+        <section>
+            <h2 class="no-caps">Implementation Bundles</h2>
+
+            <ul>
+                <li>FOSUserBundle is an User Management implementation</li>
+                <li>You can use it if if fits your needs well</li>
+                <li>Otherwise you add a burden on your project, in term of maintenance and quality</li>
+                <li>You do not want a 5000+ lines of code Bundle to only use some parts of it</li>
+            </ul>
+        </section>
+
+        <section>
             <h2 class="no-caps">Wrapper Bundles</h2>
 
             <ul>
-                <li>Some bundles are only wrapper around a perfectly fine library
-                <li>The library moves faster than the bundle, and you are blocked
+                <li>Some are only wrapper around a perfectly fine library
+                <li>The library moves faster than the bundle, and you have to update things manually
                 <li>In some cases the Symfony Bundle adds constraints on top of the Library, like FOSElasticaBundle:
                     <ul>
                         <li>FOSElasticaBundle adds Configuration constraint for the Elasticsearch mapping
@@ -763,7 +849,7 @@ INSERT INTO `test` (username) VALUES
         </section>
 
         <section>
-            <h2 class="no-caps">Wrap up</h2>
+            <h2 class="no-caps">🌯 Wrap up 🌯</h2>
 
             <ul>
                 <li>FOSUserBundle is a great tool for beginners, but it's an opinionated implementation, and should not be used on professional applications:
@@ -771,15 +857,29 @@ INSERT INTO `test` (username) VALUES
                     <li>Too much code to write on top of it for customisation
                     <li>Makes maintenance and updates harder
                 </ul>
-                <li>Maintainers can use some help answering issues, let's join on Saturday
-                <li>Building your own User management system is easy
+                <li class="emphasis">Maintainers can use some help answering issues, let's join on Saturday 👍
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">🌯 Wrap up 🌯</h2>
+
+            <ul>
+                <li>Building your own User Management system is easy
                 <li>Third party bundles are good for quick win, but think about the long term consequences
+                <li>Each Bundle you install is a risk 🚧
             </ul>
         </section>
 
 
         <section>
-            <h2 class="no-caps">Thanks!</h2>
+            <h2 class="no-caps">Thanks a lot!</h2>
+
+            TODO THX FOSUSER CONTRIB + TWITTER
+        </section>
+
+        <section>
+            TODO SOURCES
         </section>
     </div>
 </div>
