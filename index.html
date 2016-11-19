@@ -94,7 +94,7 @@
             <h2>It all started with a new project</h2>
 
             <ul>
-                <li>Install Symfony and FOSUserBundle</li>
+                <li>Install Symfony and FOSUserBundle 🚀</li>
                 <li>Client wants some modifications</li>
                 <li>Tweak the bundle</li>
                 <li>Hack the bundle</li>
@@ -195,7 +195,7 @@ target=bundles/FOS/UserBundle</code></pre>
         <section>
             <h2 class="no-caps">What is not in FOSUser</h2>
             <ul>
-                <li>Authentication (Form login, basic, ldap...)
+                <li>Authentication (Form login, basic, LDAP...)
                 <li>Authorisation (Access controls...)
                 <li>Session management
                 <li>Remember Me
@@ -231,10 +231,10 @@ target=bundles/FOS/UserBundle</code></pre>
             <h2 class="no-caps">It's an implementation, not a framework</h2>
 
             <ul>
-                <li>This will cause some pain
                 <li>Some choices are done for the greater good
                 <li>Not everything will work for you
                 <li>You will spend a lot of time bending the implementation to your needs
+                <li>This will cause some pain
             </ul>
         </section>
 
@@ -376,8 +376,8 @@ target=bundles/FOS/UserBundle</code></pre>
                 <li>Special block <strong class="emphasis">fos_user_content</strong>:
                     <pre><code class="hljs twig" data-trim>{% extends "::base.html.twig" %}
 {% block body %}
-{% block fos_user_content %}{% endblock fos_user_content %}
-{{ parent() }}
+    {% block fos_user_content %}{% endblock fos_user_content %}
+    {{ parent() }}
 {% endblock body %}</code></pre>
                 </li>
                 <li>You <strong class="emphasis">HAVE</strong> to display flash messages</li>
@@ -716,7 +716,7 @@ protected $birthDate;</code></pre>
         <section>
             <h2 class="no-caps">With a proper collation</h2>
 
-            <h1><code>â</code> = <code>Ä</code> = <code>A</code></h1>
+            <h1><code>â</code> = <code>Ä</code> = <code>A</code> = <code class="no-caps">a</code></h1>
 
             <h2>🤘</h2>
         </section>
@@ -779,26 +779,43 @@ INSERT INTO `test` (username) VALUES
                         <li class="fragment">Add <code>&amp;type=symfony-bundle</code> to filter only the Symfony Bundle!</li>
                     </ul>
                 </li>
-
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Packagist.org</h2>
+            <img src="images/packagist-before.png" alt="Before">
+        </section>
 
-            <p>TODO https://packagist.org/packages/jolicode/gif-exception-bundle DETAILS</p>
+        <section>
+            <img src="images/packagist-after.png" alt="After">
+        </section>
+
+        <section>
+            <h3 class="no-caps">Do not use Composer to install<br> 😅 jQuery 😅</h3>
+            <h2 class="no-caps">Please</h2>
+        </section>
+
+        <section>
+            <a href="https://packagist.org/packages/jolicode/gif-exception-bundle">
+                <img src="images/packagist-full.png" alt="" style="width: 80%">
+            </a>
+        </section>
+
+        <section>
+            <a href="https://packagist.org/packages/jolicode/gif-exception-bundle">
+                <img src="images/packagist-full-ano.png" alt="" style="width: 80%">
+            </a>
         </section>
 
         <section>
             <h2 class="no-caps">What to check</h2>
 
             <ul>
-                <li>Never install a bundle you do not trust 100%</li>
-                <li>Is it maintained? Is it up to date? Can I contribute?
-                <li>What does it do and how easily can it be changed?
-                <li>What’s the real added value? Sometimes a bundle is just a library exposed as a service
+                <li>Is it maintained? Can I contribute? Bus factor?
                 <li>Is there any tests? Are they green?
-                <li>What are the dependencies?
+                <li>Is there recent a stable version?
+                <li>Is there a reasonable amount of issues?
+                <li>What are the dependencies? What are the dependencies of the dependencies?!
             </ul>
         </section>
 
@@ -806,19 +823,12 @@ INSERT INTO `test` (username) VALUES
             <h2 class="no-caps">Almost 8200 bundles to choose from</h2>
 
             <ul>
-                <li>More than one maintainer (Bus Factor)
-                <li>Stable release, not too old
-                <li>Tests are green
-                <li>No issue pending or without answer
-                <li>Complete documentation
-                <li>Add a real feature to Symfony, not just a wrapped library
+                <li>Never install a bundle you do not trust 100%</li>
+                <li>What does it do and how easily can it be changed?
+                <li>Is there a complete documentation?
+                <li>Look at the issue tracker for long pending issues
+                <li>Does it add a real feature to Symfony, or is it just a library?
             </ul>
-        </section>
-
-        <section>
-            <h2 class="no-caps">Two types of Bundle</h2>
-
-            <p>There is more</p>
         </section>
 
         <section>
@@ -826,7 +836,7 @@ INSERT INTO `test` (username) VALUES
 
             <ul>
                 <li>FOSUserBundle is an User Management implementation</li>
-                <li>You can use it if if fits your needs well</li>
+                <li>You can use it if it fits your needs well</li>
                 <li>Otherwise you add a burden on your project, in term of maintenance and quality</li>
                 <li>You do not want a 5000+ lines of code Bundle to only use some parts of it</li>
             </ul>
@@ -836,7 +846,7 @@ INSERT INTO `test` (username) VALUES
             <h2 class="no-caps">Wrapper Bundles</h2>
 
             <ul>
-                <li>Some are only wrapper around a perfectly fine library
+                <li>Wrapper around a perfectly fine PHP library
                 <li>The library moves faster than the bundle, and you have to update things manually
                 <li>In some cases the Symfony Bundle adds constraints on top of the Library, like FOSElasticaBundle:
                     <ul>
@@ -845,6 +855,16 @@ INSERT INTO `test` (username) VALUES
                         <li>Elasticsearch mapping move faster than the bundle
                     </ul>
                 </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2 class="no-caps">3rd party Bundles</h2>
+
+            <ul>
+                <li>Keep your number of Bundle as low as possible ⬇
+                <li>Prefer libraries over Bundles 💎 💍
+                <li>Stay awesome 💗
             </ul>
         </section>
 
@@ -867,19 +887,27 @@ INSERT INTO `test` (username) VALUES
             <ul>
                 <li>Building your own User Management system is easy
                 <li>Third party bundles are good for quick win, but think about the long term consequences
-                <li>Each Bundle you install is a risk 🚧
+                <li>Each Bundle you install is long term engagement 🚧
             </ul>
         </section>
 
-
-        <section>
-            <h2 class="no-caps">Thanks a lot!</h2>
-
-            TODO THX FOSUSER CONTRIB + TWITTER
+        <section data-background="images/contribs.png">
+            <h2 class="no-caps">Thanks to all FOSUserBundle contributors</h2>
         </section>
 
         <section>
-            TODO SOURCES
+            <h2 class="no-caps">I'm done ✌</h2>
+
+            <h4>Throw your questions at me!</h4>
+
+            <p>❤ <small>Did I told you I love emoji?</small> 🦄</p>
+            <p>
+                <a href="https://twitter.com/damienalexandre">
+                    <img src="images/supergeek.png" alt="Me"
+                         style="width: 20%; vertical-align: middle; background-color: white!important; padding:10px;border-radius: 15px">
+                </a>
+                <br>@damienalexandre
+            </p>
         </section>
     </div>
 </div>
