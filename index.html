@@ -335,7 +335,7 @@ target=bundles/FOS/UserBundle</code></pre>
                 <li><code>username</code> and <code>username_canonical</code></li>
                 <li><code>email_canonical</code> ⚠</li>
                 <li><code>salt</code>, not needed since bcrypt (UserInterface)</li>
-                <li><code>last_login</code>, why should I want that?</li>
+                <li><code>last_login</code>, an UPDATE on each login ⚠</li>
                 <li><code>roles</code> is <code>(DC2Type:array)</code>, no interoperability</li>
             </ul>
         </section>
