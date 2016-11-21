@@ -265,7 +265,7 @@ target=bundles/FOS/UserBundle</code></pre>
             <h2 class="no-caps">Pain #1: Username and email as identity</h2>
 
             <ul>
-                <li>Symfony refer to <strong class="emphasis">username</strong> everywhere:
+                <li>Symfony refers to <strong class="emphasis">username</strong> everywhere:
                     <ul>
                         <li><code>UserProviderInterface::loadUserByUsername</code></li>
                         <li><code>UserInterface::getUsername</code></li>
@@ -575,7 +575,7 @@ protected $birthDate;</code></pre>
 
             <ul>
                 <li>Symfony Security is hard to learn 🔐
-                <li>It enable a WOW effect for new developers 😃
+                <li>It enables a WOW effect for new developers 😃
                 <li>Still a great piece of software if you stay in the lines 😍
             </ul>
         </section>
@@ -589,13 +589,13 @@ protected $birthDate;</code></pre>
                 the user base that does not know Symfony very well 👶
             </ul>
 
-            <h4 class="no-caps">Maybe we should do better for the sake of Symfony? FOSUserBundle should be helpful, not scary.</h4>
+            <h4 class="no-caps">Maybe should we do better for the sake of Symfony? FOSUserBundle should be helpful, not scary.</h4>
         </section>
 
         <section>
             <h2 class="no-caps">Hardly maintained 😰</h2>
 
-            <p><strong class="emphasis">Issue overflow</strong>: everyone ask questions about the Symfony Security here,
+            <p><strong class="emphasis">Issue overflow</strong>: everyone asks questions about the Symfony Security here,
                 thinking Security is FOSUser concern:</p>
 
             <a href="https://github.com/FriendsOfSymfony/FOSUserBundle/issues/2290"><img style="max-width: 60%" src="images/2290.png" alt="Issue 2290"></a>
@@ -697,7 +697,7 @@ protected $birthDate;</code></pre>
             <ul>
                 <li>FOSUserBundle adds canonical versions of all the username and email fields
                 <li><code>mb_convert_case($string, MB_CASE_LOWER);</code>
-                <li>This allow to make sure we can't have two accounts with the same email:<br>
+                <li>This makes sure we can't have two accounts with the same email:<br>
 
             </ul>
             <p><code>foobar@example.org</code><br><code>FoOBAR@example.org</code></p>
@@ -813,7 +813,7 @@ INSERT INTO `test` (username) VALUES
             <ul>
                 <li>Is it maintained? Can I contribute? Bus factor?
                 <li>Is there any tests? Are they green?
-                <li>Is there recent a stable version?
+                <li>Is there a recent stable version?
                 <li>Is there a reasonable amount of issues?
                 <li>What are the dependencies? What are the dependencies of the dependencies?!
             </ul>
@@ -877,7 +877,7 @@ INSERT INTO `test` (username) VALUES
                     <li>Too much code to write on top of it for customisation
                     <li>Makes maintenance and updates harder
                 </ul>
-                <li class="emphasis">Maintainers can use some help answering issues, let's join on Saturday 👍
+                <li class="emphasis">Help is needed, join us on Saturday 👍
             </ul>
         </section>
 
