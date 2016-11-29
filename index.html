@@ -239,19 +239,19 @@ target=bundles/FOS/UserBundle</code></pre>
         </section>
 
         <section>
-            <h2 class="no-caps">Pain #1: Username and email as identity</h2>
+            <h2 class="no-caps">Pain #1: Username and email as identifier</h2>
 
             <ul>
                 <li>Login form uses <strong class="emphasis">username by default</strong> 👤
                 <li>Both <strong class="emphasis">email</strong> and <strong class="emphasis">username</strong> are unique,
-                so email is also valid as identity ☑
-                <li>Most professional websites use email as login
+                so email is also valid as identifier ☑
+                <li>Most professional websites use email as identifier
                 <li>You <strong class="emphasis">can't</strong> really switch to emails only 😥
             </ul>
         </section>
 
         <section>
-            <h2 class="no-caps">Pain #1: Username and email as identity</h2>
+            <h2 class="no-caps">Pain #1: Username and email as identifier</h2>
 
             <p>Two user provider to chose from:</p>
 
@@ -261,7 +261,7 @@ target=bundles/FOS/UserBundle</code></pre>
             </ul>
         </section>
         <section>
-            <h2 class="no-caps">Pain #1: Username and email as identity</h2>
+            <h2 class="no-caps">Pain #1: Username and email as identifier</h2>
 
             <ul>
                 <li>Symfony refers to <strong class="emphasis">username</strong> everywhere:
@@ -270,7 +270,7 @@ target=bundles/FOS/UserBundle</code></pre>
                         <li><code>UserInterface::getUsername</code></li>
                     </ul>
                 </li>
-                <li>It really mean "identity", and may <a
+                <li>It really mean "identifier", and may <a
                         href="https://github.com/symfony/symfony/issues/10316">change in the future</a>...</li>
                 <li>It's ok to have <code>getUsername</code> <a
                         href="http://symfony.com/doc/current/doctrine/registration_form.html#having-a-registration-form-with-only-email-no-username">return an email</a></li>
@@ -708,7 +708,7 @@ protected $birthDate;</code></pre>
             <ul>
                 <li>Do you know what an <strong class="emphasis">SQL collation</strong> is for?
                 <li><pre><code class="hljs" data-trim>… COLLATE utf8mb4_unicode_ci ENGINE = InnoDB;</code></pre></li>
-                <li>It tells how to <strong class="emphasis">sort the data</strong> in your table, to make sure "A" and "a" are before "Z" dans "z"... which may not be the case in binary order</li>
+                <li>It tells how to <strong class="emphasis">sort the data</strong> in your table, to make sure "A" and "a" are before "Z" and "z"... which may not be the case in binary sort order</li>
             </ul>
         </section>
 
